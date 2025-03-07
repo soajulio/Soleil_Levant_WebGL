@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Soleil levant - Monet</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+		<style>
+			#frame {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 20px auto;
+				width: 1220px;
+				height: 620px;
+				background-color: #8B4513;
+				box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+				border-radius: 15px;
+				padding: 15px;
+			}
+			#container {
+				width: 1200px;
+				height: 600px;
+			}
+			.centre {
+				text-align: center;
+			}
+			.description {
+				margin: 20px;
+				font-size: 1.2em;
+				text-align: center;
+			}
+			body {
+				background-color: bisque;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="frame">
+			<div id="container"></div>
+		</div>
+		<!-- API importe du site de Three.js -->
+		<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims
+		.js"></script>
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "https://threejs.org/build/three.module.js",
+					"three/addons/": "https://threejs.org/examples/jsm/"
+					}
+			}
+		</script>
+	<!-- JQuery pour afficher les erreurs -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js
+		"></script>
+	<!-- Un titre centre -->
+		<h1 class="centre">Claude Monet</h1>
+		<div id="webGL" class="centre"></div>
+	<!-- Mon script avec un chemin relatif -->
+		<p class="centre"> Le soleil levant </p>
+		<p class="description"> C'était un matin brumeux de 1872. Claude Monet se tenait sur le quai, capturant l'aube naissante sur sa toile. Le ciel se teintait de bleu et de gris, tandis que le soleil levant diffusait une lumière orangée sur l'eau scintillante.
+			Les silhouettes des bateaux se dessinaient doucement dans la brume. Avec des coups de pinceau rapides, Monet saisissait la danse des lumières et des couleurs, transformant un paysage quotidien en une scène de pure beauté.
+			En quelques heures, son tableau prit forme. Le soleil, brillant à travers le brouillard, devint le point focal de l'œuvre. Monet recula et observa son travail, sachant qu'il avait capturé quelque chose de spécial. Ce tableau, "Le soleil levant", marquerait bientôt le début de l'impressionnisme.
+		</p>	
+		<script class="centre" type="module" src="main.js"></script>
+	</body>
+</html>
